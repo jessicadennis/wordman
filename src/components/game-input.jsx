@@ -7,7 +7,7 @@ const GameInput = ({ onSubmit, disabled, ...props }) => {
       className="flex items-end"
       onSubmit={(e) => {
         e.preventDefault();
-        if (onSubmit) onSubmit();
+        if (onSubmit) onSubmit(colorGuess.toUpperCase());
       }}
     >
       <label htmlFor="game-input">
