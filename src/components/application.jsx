@@ -6,7 +6,9 @@ import GameInput from './game-input';
 import GameStatus from './game-status';
 
 const Application = () => {
-  const [correctAnswer, setCorrectAnswer] = useState(generateRandomColor());
+  const [correctAnswer, setCorrectAnswer] = useState(() =>
+    generateRandomColor(),
+  );
   const [hasGuessed, setHasGuessed] = useState(false);
   const [isWinner, setIsWinner] = useState(false);
 
