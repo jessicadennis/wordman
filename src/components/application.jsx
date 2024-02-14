@@ -3,9 +3,10 @@ import Game from './game';
 
 const Application = () => {
   return (
-    <main className="flex flex-col gap-8 mx-auto my-8 w-96">
-      <Game />
-      <ExpensiveComponent />
+    <main className="mx-auto my-8 flex w-96 flex-col gap-8">
+      <Game>
+        <ExpensiveComponent />
+      </Game>
     </main>
   );
 };
